@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIDE", "MyIDE.csproj", "{857D121C-BD66-4514-A2BD-586B81923094}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML-Renderer", "HTML-Renderer.csproj", "{857D121C-BD66-4514-A2BD-586B81923094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
