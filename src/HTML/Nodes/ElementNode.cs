@@ -4,10 +4,10 @@ public class ElementNode(ElementData elementData, Node[] children) : Node(childr
 	public ElementData elementData = elementData;
 }
 
-public struct ElementData
+public struct ElementData(string tagName, Dictionary<string, string> attributes)
 {
-	public string tagName;
-	public Dictionary<string, string> attributes;
+	public string tagName = tagName;
+	public Dictionary<string, string> attributes = attributes;
 
 	public string id => attributes["id"];
 	public string[] classes => attributes["class"].Split(" ");
