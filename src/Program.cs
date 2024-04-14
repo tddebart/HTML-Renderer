@@ -1,0 +1,1 @@
+﻿var mainWindow = new MainWindow();

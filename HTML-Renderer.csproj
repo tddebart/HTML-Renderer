@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>MyIDE</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ImGui.NET" Version="1.89.4" />
+      <PackageReference Include="ppy.SDL2-CS" Version="1.0.741-alpha" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="SDL2.dll" />
+      <Content Include="SDL2.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="SDL2_ttf.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Ubuntu-Regular.ttf">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="General\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="General\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="General\**" />
+    </ItemGroup>
+
+</Project>
